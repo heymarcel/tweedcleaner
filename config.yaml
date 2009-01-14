@@ -1,0 +1,34 @@
+---
+outputdir: /home/marcel/personal/tweedcleaner/test/output
+logdir: /home/marcel/personal/tweedcleaner/test/log
+feeds:
+-
+ url:  http://www.krnv.com/Global/category.asp?C=6051&nav=0RZF&clienttype=rss
+ name: krnv
+-
+ url:  http://www.kvbc.com/Global/category.asp?C=6014&clienttype=rss
+ name: kvbc
+-
+ url:  http://www.mesquitelocalnews.com/RSSxmlresults.php?id=2
+ name: mesquite
+-
+ url:  http://feeds.feedburner.com/lasvegasnow/iteam
+ name: lasvegasnow-iteam
+-
+ url:  http://www.ktvn.com/Global/category.asp?C=90455&clienttype=rss
+ name: ktvn
+-
+ url:  http://feeds.feedburner.com/lasvegasnow/homepage
+ name: lasvegasnow-homepage
+-
+ url: http://www.ahoranews.com/rss.php?cha=13
+ name: ahora
+-
+ url: http://nevadasagebrush.com/feed/
+ name: sagebrush
+-
+ url: http://unlvrebelyell.com/feed/rss/
+ name: rebelyell 
+-
+ url: http://journalism.unr.edu/rss.php
+ name: unr-jschool
