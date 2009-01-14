@@ -31,8 +31,8 @@ def main():
     parser.add_option("-t", "--test", action="store_true", dest="test",
                       default=False, help="Download original feed for verification")
     parser.add_option("-c", "--config", dest="config",
-                      help="configuration file (default \"./config.yaml\")",
-                      metavar="CONFIG", default="./config.yaml")
+                      help="configuration file (default \"./config.yml\")",
+                      metavar="CONFIG", default="./config.yml")
     parser.add_option("-a", "--cache", dest="cache", type="string",
               help="cache file (default \"./cache.tweed\")",
               metavar="CACHE", default="./cache.tweed")
@@ -45,7 +45,7 @@ def main():
     
     # Initial script does the following:
     
-    #  Reads config.yaml file to get list of feeds
+    #  Reads config.yml file to get list of feeds
     try:
         configdoc = file(options.config, "r")
         config    = yaml.load(configdoc)
@@ -147,7 +147,7 @@ def main():
         except:
             if options.verbose:
                 print "Output directory cannot be created or already exists."        
-        # Write cleaned feed to file specified in config.yaml
+        # Write cleaned feed to file specified in config.yml
         outfile = os.path.join(config["outputdir"], "%s.xml" % feed["name"])
         rss.write_xml(open(outfile, "w"))
         logger.info("Wrote %s" % outfile)
